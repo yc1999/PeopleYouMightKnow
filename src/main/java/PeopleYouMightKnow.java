@@ -56,12 +56,7 @@ public class PeopleYouMightKnow {
             for (Text val:values){
                 String value = val.toString();
                 final boolean check = value.startsWith("1");
-                Long target = Long.valueOf(-1);
-                try {
-                    target  = Long.valueOf(value.substring(1));
-                }catch (NumberFormatException e){
-                    System.out.print("************************************error: "+value.substring(1)+"\n");
-                }
+                final Long target = Long.valueOf(value.substring(1));
 
                 if(check){
                     //如果当前读入表示是直接朋友，那么设置值为-1
