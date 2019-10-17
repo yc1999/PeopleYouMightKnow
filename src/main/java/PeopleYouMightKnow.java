@@ -101,7 +101,7 @@ public class PeopleYouMightKnow {
             int i = 0;
             String output = "";
 
-            //写入输出结果
+            //写入输出结果,使用context
             for (Long target : sortedMutualFriends.keySet()){
                 if (i == 0){
                     output += target;
